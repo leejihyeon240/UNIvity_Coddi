@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android"
+>
+
+    <item
+        android:title="home"
+        android:id="@+id/homeButton"
+        android:icon="@drawable/tutorial_menu_trans"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="shop"
+        android:id="@+id/shopButton"
+        android:icon="@drawable/tutorial_menu_trans"
+        app:showAsAction="always"/>
+    <item
+        android:title="ar"
+        android:id="@+id/arButton"
+        android:icon="@drawable/tutorial_menu_trans"
+        app:showAsAction="always"/>
+    <item
+        android:title="cal"
+        android:id="@+id/calendarButton"
+        android:icon="@drawable/menu_calendar"
+        app:showAsAction="always"/>
+    <item
+        android:title="set"
+        android:id="@+id/setButton"
+        android:icon="@drawable/tutorial_menu_trans"
+        app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "942296107334",
+    "project_id": "univity-aff73",
+    "storage_bucket": "univity-aff73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942296107334:android:2ac069a3bb9699a9697d47",
+        "android_client_info": {
+          "package_name": "com.example.univity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942296107334-h2mvvmevm23sutjir50frmre8b92c6pn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_Ic3VkR9uPhyBjovyf-uB2x_ZkVKKOkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942296107334-h2mvvmevm23sutjir50frmre8b92c6pn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

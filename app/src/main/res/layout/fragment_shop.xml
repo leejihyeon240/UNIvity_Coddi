@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".ShopFragment"
+             android:background="@drawable/shop_bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+        <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                            android:id="@+id/levelImg"
+                            android:layout_width="46dp"
+                            android:layout_height="47dp"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/uni_small_img"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="5dp" android:visibility="invisible"/>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="175dp"
+                          android:layout_height="55dp"
+                          android:orientation="vertical">
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/levelText"
+                            android:layout_gravity="center"
+                            android:text="Lv."
+                            android:textSize="14dp"
+                            android:textColor="#FFFFFF"
+                            android:includeFontPadding="false"
+                            android:fontFamily="@font/onemobile_pop">
+                    </TextView>
+
+                    <TextView
+                            android:id="@+id/nicknameText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginBottom="1dp"
+                            android:fontFamily="@font/onemobile_pop"
+                            android:textColor="#FFFFFF"
+                            android:textSize="17dp"/>
+                </LinearLayout>
+
+
+                <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <ProgressBar
+                            android:id="@+id/levelProgressBar"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:layout_width="165dp"
+                            android:layout_height="27dp"
+                            android:layout_marginTop="7dp"
+                            android:max="1000"
+                            android:progressDrawable="@drawable/progressbar_progressbar2"/>
+
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="horizontal"
+                                  android:layout_gravity="left|center_vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginLeft="10dp">
+
+                        <ImageView
+                                android:id="@+id/heartImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="15dp"
+                                android:adjustViewBounds="true"
+                                app:srcCompat="@drawable/home_energy"
+                                android:layout_gravity="left|center_vertical"/>
+
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_gravity="center">
+                            <TextView
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/levelBarCount"
+                                    android:layout_gravity="left|center_vertical"
+                                    android:textColor="#2F1F58"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/onemobile_pop"
+                                    android:text="     ">
+                            </TextView>
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/levelBarCount2"
+                                    android:layout_gravity="left|center_vertical"
+                                    android:text="/1000"
+                                    android:textColor="#2F1F58"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/onemobile_pop">
+                            </TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="27dp">
+
+                    <ImageView
+                            android:id="@+id/coinState"
+                            android:layout_width="75dp"
+                            android:layout_height="27dp"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/coin_background"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/coinText"
+                            android:textColor="#2F1F58"
+                            android:textSize="16dp"
+                            android:layout_gravity="right|center"
+                            android:fontFamily="@font/onemobile_pop"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="0.5dp">
+                    </TextView>
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView android:layout_width="131dp"
+                       android:layout_height="31.4dp"
+                       android:layout_gravity="start"
+                       android:layout_marginTop="37dp"
+                       android:layout_marginBottom="31dp"
+                       android:src="@drawable/shop_title"/>
+
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:layout_width="334dp"
+                        android:layout_height="165dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/shop_itembox"/>
+
+                <LinearLayout android:layout_width="334dp"
+                              android:layout_height="165dp"
+                              android:paddingRight="40dp"
+                              android:paddingLeft="40dp"
+                              android:gravity="center"
+                              android:orientation="horizontal"
+                              android:layout_centerInParent="true">
+
+                    <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/shop_item_temp"
+                            android:id="@+id/itemImg1"/>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"/>
+
+                    <LinearLayout android:layout_width="111dp"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                                  android:layout_gravity="center">
+                        <TextView
+                                android:layout_width="111dp"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:fontFamily="@font/onemobile_pop"
+                                android:textColor="@color/black"
+                                android:textSize="17dp" android:id="@+id/item_1"/>
+
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="horizontal"
+                                      android:layout_gravity="center">
+                            <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="15dp"
+                                    android:adjustViewBounds="true"
+                                    app:srcCompat="@drawable/home_energy"
+                                    android:layout_gravity="left|center_vertical"/>
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="3"
+                                    android:includeFontPadding="false"
+                                    android:textColor="#2F1F58"
+                                    android:textSize="17dp"
+                                    android:fontFamily="@font/noto_sans_bold"/>
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                                android:id="@+id/coin15BuyBox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="center">
+
+
+                            <ImageView
+                                    android:id="@+id/coin15BuyButton"
+                                    android:layout_width="79.71dp"
+                                    android:layout_height="31.43dp"
+                                    android:adjustViewBounds="true"
+                                    app:srcCompat="@drawable/coin15_button"/>
+
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                <ImageView
+                        android:layout_width="334dp"
+                        android:layout_height="165dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/shop_itembox"/>
+
+                <LinearLayout android:layout_width="334dp"
+                              android:layout_height="165dp"
+                              android:paddingRight="40dp"
+                              android:paddingLeft="40dp"
+                              android:gravity="center"
+                              android:orientation="horizontal"
+                              android:layout_centerInParent="true">
+
+                    <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/shop_item_temp"
+                            android:id="@+id/itemImg2"/>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"/>
+
+                    <LinearLayout android:layout_width="111dp"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                                  android:layout_gravity="center">
+                        <TextView
+                                android:layout_width="111dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/onemobile_pop"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="17dp" android:id="@+id/item_2"/>
+
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="horizontal"
+                                      android:layout_gravity="center">
+                            <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="15dp"
+                                    android:adjustViewBounds="true"
+                                    app:srcCompat="@drawable/home_energy"
+                                    android:layout_gravity="left|center_vertical"/>
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/noto_sans_bold"
+                                    android:text="5"
+                                    android:includeFontPadding="false"
+                                    android:textColor="#2F1F58"
+                                    android:textSize="17dp"/>
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                                android:id="@+id/coin20BuyBox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="center">
+
+                            <ImageView
+                                    android:id="@+id/coin20BuyButton"
+                                    android:layout_width="79.71dp"
+                                    android:layout_height="31.43dp"
+                                    android:adjustViewBounds="true"
+                                    app:srcCompat="@drawable/coin20_button"/>
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                <ImageView
+                        android:layout_width="334dp"
+                        android:layout_height="165dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/shop_itembox"/>
+
+                <LinearLayout android:layout_width="334dp"
+                              android:layout_height="165dp"
+                              android:paddingRight="40dp"
+                              android:paddingLeft="40dp"
+                              android:gravity="center"
+                              android:orientation="horizontal"
+                              android:layout_centerInParent="true">
+
+                    <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/shop_item_temp"
+                            android:id="@+id/itemImg3"/>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"/>
+
+                    <LinearLayout android:layout_width="111dp"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                                  android:layout_gravity="center">
+                        <TextView
+                                android:layout_width="111dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/onemobile_pop"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="17dp" android:id="@+id/item_3"/>
+
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="horizontal"
+                                      android:layout_gravity="center">
+                            <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="15dp"
+                                    android:adjustViewBounds="true"
+                                    app:srcCompat="@drawable/home_energy"
+                                    android:layout_gravity="left|center_vertical"/>
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/noto_sans_bold"
+                                    android:text="10"
+                                    android:includeFontPadding="false"
+                                    android:textColor="#2F1F58"
+                                    android:textSize="17dp"/>
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                                android:id="@+id/coin40BuyBox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="center">
+
+                            <ImageView
+                                    android:id="@+id/coin40BuyButton"
+                                    android:layout_width="79.71dp"
+                                    android:layout_height="31.43dp"
+                                    android:adjustViewBounds="true"
+                                    app:srcCompat="@drawable/coin40_button"/>
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".FinishWalkActivity">
+
+    <!--    <TextView-->
+    <!--            android:text="TextView"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:id="@+id/myRunningTime"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:textSize="20sp"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"/>-->
+
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:scaleType="centerCrop"
+               android:src="@drawable/finish_bg" android:id="@+id/imageView8"/>
+
+    <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:id="@+id/exitButton"
+            android:src="@drawable/finish_exitbutton"
+            android:layout_marginTop="39dp"
+            android:layout_marginRight="39dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <ImageView
+            android:id="@+id/titleText"
+            android:visibility="invisible"
+            android:layout_width="115dp"
+            android:layout_height="33dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/temp_finishtext"
+            android:layout_marginBottom="75dp"
+            app:layout_constraintBottom_toTopOf="@+id/uni1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@+id/imageView8"
+            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.25"/>
+    <ImageView
+            android:id="@+id/uni1"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/uni_big_img_level1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:visibility="invisible" tools:visibility="invisible"/>
+
+
+    <ImageView
+            android:id="@+id/uniLevel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/uni_finish_level3" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <RelativeLayout android:layout_width="350dp"
+                    android:layout_height="370dp"
+                    android:layout_marginBottom="100dp"
+                    android:layout_marginLeft="300dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+                android:id="@+id/shadow"
+                android:visibility="invisible"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/uni_shadow"/>
+
+        <ImageView
+                android:id="@+id/uni2"
+                android:adjustViewBounds="true"
+                android:layout_alignParentTop="true"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:src="@drawable/uni_bbaggom_img_level1"
+                android:layout_marginTop="-8dp"
+                android:layout_marginLeft="20dp" tools:visibility="invisible" android:visibility="invisible"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:visibility="invisible"
+                  android:id="@+id/resultText"
+                  android:layout_marginLeft="38.5dp"
+                  android:layout_marginTop="400dp"
+                  android:layout_marginBottom="25dp"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  tools:visibility="visible">
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="bottom"
+                      android:layout_gravity="left"
+                      android:orientation="horizontal">
+
+            <TextView
+                    android:text="24분"
+                    android:includeFontPadding="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/myRunningTime"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:layout_gravity="center"
+                    android:textSize="28dp"
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="동안"
+                      android:layout_marginBottom="2dp"
+                      android:includeFontPadding="false"
+                      android:textSize="18dp"
+                      android:textColor="@android:color/white"
+                      android:fontFamily="@font/noto_sans"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="bottom"
+                      android:layout_gravity="left"
+                      android:orientation="horizontal">
+
+            <TextView
+                    android:text="5"
+                    android:includeFontPadding="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/myRunningStep"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:layout_gravity="center"
+                    android:textSize="28dp"
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                    android:text="보"
+                    android:includeFontPadding="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:layout_gravity="center"
+                    android:textSize="28dp"
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="를"
+                      android:layout_marginBottom="2dp"
+                      android:includeFontPadding="false"
+                      android:textSize="18dp"
+                      android:textColor="@android:color/white"
+                      android:fontFamily="@font/noto_sans"/>
+
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:includeFontPadding="false"
+                  android:text="걸었어요!"
+                  android:textSize="18dp"
+                  android:textColor="@android:color/white"
+                  android:fontFamily="@font/noto_sans"/>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+            android:id="@+id/reward1"
+            android:layout_width="145dp"
+            android:layout_height="74dp"
+            app:layout_constraintTop_toBottomOf="@+id/resultText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="56dp"
+            android:layout_marginLeft="38.5dp">
+
+        <ImageView
+                android:visibility="visible"
+                android:layout_width="145dp"
+                android:layout_height="74dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/finish_reward1"/>
+        <TextView
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:fontFamily="@font/onemobile_pop"
+                android:textColor="#6D6890"
+                android:textSize="20dp"
+                android:layout_marginLeft="52dp"
+                android:id="@+id/tvReward1"/>
+    </FrameLayout>
+    <FrameLayout
+            android:id="@+id/reward2"
+            android:layout_width="145dp"
+            android:layout_height="74dp"
+            app:layout_constraintTop_toBottomOf="@+id/resultText"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="56dp"
+            android:layout_marginRight="38.5dp">
+
+        <ImageView
+                android:visibility="visible"
+                android:layout_width="145dp"
+                android:layout_height="74dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/finish_reward2"/>
+        <TextView
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:fontFamily="@font/onemobile_pop"
+                android:textColor="#6D6890"
+                android:textSize="20dp"
+                android:layout_marginLeft="52dp"
+                android:id="@+id/tvReward2"/>
+    </FrameLayout>
+
+    <!--    <ImageView-->
+    <!--            android:id="@+id/uni2"-->
+    <!--            android:layout_width="400dp"-->
+    <!--            android:layout_height="400dp"-->
+    <!--            android:visibility="visible"-->
+    <!--            android:src="@drawable/uni_big_smile"-->
+    <!--            android:layout_marginLeft="400dp"-->
+    <!--            android:layout_marginBottom="200dp"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"/>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

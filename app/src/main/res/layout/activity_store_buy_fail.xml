@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             android:layout_width="350dp"
+             android:layout_height="600dp"
+             android:layout_marginTop="265dp"
+             android:layout_gravity="center_horizontal"
+             android:background="@android:color/transparent">
+
+    <!-- 타이틀바 -->
+    <LinearLayout android:layout_width="334dp"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_marginTop="26dp"
+                  android:background="@drawable/round"
+                  android:layout_gravity="center_horizontal">
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_gravity="center"
+                      android:layout_marginTop="39dp"
+        >
+
+            <TextView
+                    android:id="@+id/txtText2"
+                    android:textSize="17.14sp"
+                    android:gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="코인이 부족합니다!"
+                    android:fontFamily="@font/onemobile_pop"
+                    android:textColor="@color/black"/>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22.28dp"
+                    android:layout_marginBottom="23.42dp">
+
+                <ImageView
+                        android:id="@+id/failOkBtn"
+                        android:layout_width="279.27dp"
+                        android:layout_height="51.14dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ok_button"
+                        android:onClick="mOnClick"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView android:layout_width="200dp"
+               android:layout_height="52dp"
+               android:layout_gravity="center_horizontal"
+               android:src="@drawable/univity_logo"/>
+
+</FrameLayout>

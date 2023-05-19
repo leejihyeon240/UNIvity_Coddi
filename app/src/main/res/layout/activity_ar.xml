@@ -1,0 +1,356 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context=".ArActivity">
+
+    <SurfaceView
+            android:id="@+id/cameraView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    <!--    AR fragment-->
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ar_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <fragment android:name="com.google.ar.sceneform.ux.ArFragment"
+                  android:id="@+id/ux_fragment"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintVertical_bias="0.004"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"/>
+    </FrameLayout>
+
+
+    <!--    timer-->
+    <Chronometer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/chronometer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <!--    top left bar-->
+
+    <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="59.43dp"
+            android:layout_marginLeft="38.86dp"
+            android:layout_gravity="center"
+            android:visibility="visible" android:id="@+id/frameLayout">
+        <ImageView
+                android:id="@+id/coinState"
+                android:layout_width="75dp"
+                android:layout_height="27dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/coin_background"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/coinText"
+                android:layout_gravity="right|center"
+                android:textColor="#2F1F58"
+                android:textSize="16dp"
+                android:layout_marginRight="13dp"
+                android:fontFamily="@font/noto_sans"
+                android:textStyle="bold"
+                android:layout_marginTop="0.5dp">
+        </TextView>
+
+    </FrameLayout>
+
+
+    <TextView
+            android:id="@+id/stepCountView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:shadowColor="#33000000"
+            android:shadowDy="10.0"
+            android:shadowRadius="8.0"
+            android:fontFamily="@font/notocjk_bold"
+            android:includeFontPadding="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="59.43dp"
+            app:layout_constraintEnd_toEndOf="parent" android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent" android:text="0보"/>
+
+
+    <!--    top right bar-->
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintRight_toRightOf="parent"
+                  android:layout_marginTop="59.43dp"
+                  android:layout_marginRight="35dp"
+                  android:id="@+id/linearLayout4">
+
+        <ImageView
+                android:id="@+id/arPauseButton"
+                android:layout_width="48.57dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/ar_pause"
+                android:visibility="invisible"/>
+        <ImageView
+                android:id="@+id/arFinishButton"
+                android:layout_width="48.57dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:paddingTop="9.71dp"
+                app:srcCompat="@drawable/ar_finish"
+                android:visibility="gone"
+        />
+
+        <ImageView
+                android:id="@+id/arSoundButton"
+                android:layout_width="48.57dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:paddingTop="9.71dp"
+                app:srcCompat="@drawable/ar_sound"/>
+
+    </LinearLayout>
+
+
+    <!--bottom box-->
+    <RelativeLayout
+            android:id="@+id/mainStepBox"
+            android:layout_width="355dp"
+            android:layout_height="95dp"
+            android:layout_marginBottom="38.85dp"
+            android:background="@drawable/step_background"
+            android:adjustViewBounds="true"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_centerInParent="true">
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/todayText"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="1dp"
+                        android:text="Today"
+                        android:textSize="17dp"
+                        android:textColor="#141414"
+                        android:fontFamily="@font/noto_sans_bold">
+                </TextView>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/stepTodayView"
+                        android:includeFontPadding="false"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="14.28sp"
+                        android:textColor="#303030"
+                        android:fontFamily="@font/onemobile_pop">
+                </TextView>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/stepText2"
+                        android:layout_gravity="center"
+                        android:text="보"
+                        android:textSize="14.28sp"
+                        android:textColor="#303030"
+                        android:fontFamily="@font/onemobile_pop">
+                </TextView>
+            </LinearLayout>
+
+            <ProgressBar
+                    android:id="@+id/todayProgressBar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="290dp"
+                    android:layout_height="15dp"
+                    android:progressDrawable="@drawable/progressbar_progressbar1"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <!--    start ui-->
+    <ImageView
+            android:id="@+id/arBlackBg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ar_blackrec"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="parent" tools:visibility="invisible"/>
+
+    <ImageView
+            android:id="@+id/arBlackBg2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ar_blackrec"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="parent" tools:visibility="invisible"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  android:orientation="vertical"
+                  android:id="@+id/ar_startui"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+    >
+
+
+        <TextView
+                android:id="@+id/arText1"
+                android:layout_marginTop="236.29dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="AR 모드"
+                android:textSize="25dp"
+                android:fontFamily="@font/noto_sans_bold"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+        />
+
+
+        <ImageView
+                android:id="@+id/arStartButton"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="32dp"
+                app:srcCompat="@drawable/ar_startbutton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:visibility="visible"/>
+        <TextView
+                android:id="@+id/arText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="시작 버튼을 누르면 기록이 시작됩니다.\n보물상자를 획득해보세요!"
+                android:textSize="18dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/notocjk_medium"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+    <!--  코인 뇸  -->
+
+    <ImageView
+            android:id="@+id/ar_coin_button"
+            android:layout_width="142dp"
+            android:layout_height="50.5dp"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/ar_coin_button1"
+            android:layout_marginTop="490dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <ImageView
+            android:id="@+id/ar_coin_gem"
+            android:layout_width="167.7dp"
+            android:layout_height="218.5dp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/ar_coin_gem1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="224.5dp"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_gravity="center">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/tvCointext"
+                android:includeFontPadding="false"
+                android:textSize="25dp"
+                android:fontFamily="@font/onemobile_pop"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white" android:textAlignment="center"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="코인"
+                android:id="@+id/tvCoin"
+                android:includeFontPadding="false"
+                android:textSize="25dp"
+                android:fontFamily="@font/onemobile_pop"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white" android:textAlignment="center"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+    <!--    안내문구 -->
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="300dp"
+            app:srcCompat="@drawable/walk_start"
+            android:visibility="invisible"
+            android:id="@+id/walkStart"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

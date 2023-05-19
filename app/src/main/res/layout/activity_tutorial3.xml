@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/tutorial1_bg"
+        tools:context=".Tutorial3Activity">
+
+    <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                        android:layout_width="46dp"
+                        android:layout_height="47dp"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/uni_small_img"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="5dp"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="175dp"
+                      android:layout_height="55dp"
+                      android:orientation="vertical">
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Lv.1"
+                        android:textSize="14dp"
+                        android:includeFontPadding="false"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="@font/onemobile_pop"
+                >
+                </TextView>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginBottom="1dp"
+                        android:id="@+id/tutorial3_nicknameText1"
+                        android:fontFamily="@font/onemobile_pop"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17dp"/>
+            </LinearLayout>
+
+
+            <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <ProgressBar
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="165dp"
+                        android:layout_height="27dp"
+                        android:layout_marginTop="7dp"
+                        android:max="1000"
+                        android:progress="720"
+                        android:progressDrawable="@drawable/progressbar_progressbar2"/>
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:layout_gravity="left|center_vertical"
+                              android:layout_marginTop="4dp"
+                              android:layout_marginLeft="10dp">
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/home_energy"
+                            android:layout_gravity="left|center_vertical"/>
+
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_gravity="center">
+                        <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left|center_vertical"
+                                android:textColor="#2F1F58"
+                                android:textSize="16dp"
+                                android:fontFamily="@font/onemobile_pop"
+                                android:text="720">
+                        </TextView>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left|center_vertical"
+                                android:text="/1000"
+                                android:textColor="#2F1F58"
+                                android:textSize="16dp"
+                                android:fontFamily="@font/onemobile_pop">
+                        </TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="27dp">
+                <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="27dp"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/coin_background"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="950"
+                        android:layout_gravity="right|center"
+                        android:textColor="#2F1F58"
+                        android:textSize="16dp"
+                        android:includeFontPadding="false"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/onemobile_pop"
+                        android:layout_marginTop="0.5dp">
+                </TextView>
+
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="355dp"
+            android:layout_height="95dp"
+            android:layout_marginBottom="130dp"
+            android:background="@drawable/step_background"
+            android:adjustViewBounds="true"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="1dp"
+                        android:text="Today"
+                        android:textSize="17dp"
+                        android:includeFontPadding="false"
+                        android:textColor="#4D141414"
+                        android:fontFamily="@font/onemobile_pop">
+                </TextView>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="14dp"
+                        android:text="7035보"
+                        android:textColor="#303030"
+                        android:fontFamily="@font/onemobile_pop">
+                </TextView>
+            </LinearLayout>
+            <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:max="10000"
+                    android:progress="7035"
+                    android:layout_width="290dp"
+                    android:layout_height="15dp"
+                    android:progressDrawable="@drawable/progressbar_progressbar1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+            android:layout_width="1000dp"
+            android:layout_height="1050dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/uni_level1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.696"/>
+
+    <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_gravity="bottom"
+                app:labelVisibilityMode="unlabeled"
+                app:itemIconTint="@drawable/menu_selector_color"
+                app:backgroundTint="#FFFFFF"
+                app:menu="@menu/bottom_navigation_view"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"/>
+    </FrameLayout>
+
+    <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/menu_ar"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="bottom|center"/>
+    </FrameLayout>
+
+
+    <!--    tutorial-->
+
+
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:scaleType="centerCrop"
+               android:src="@drawable/tutorial_black"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tutorial3_1_set"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView android:layout_width="334dp"
+                   android:layout_height="124dp"
+                   android:id="@+id/tutorial3_1_button"
+                   android:src="@drawable/tutorial3_1"
+                   app:layout_constraintLeft_toLeftOf="parent"
+                   app:layout_constraintRight_toRightOf="parent"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   android:layout_marginBottom="143dp"/>
+
+
+        <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                            android:layout_width="46dp"
+                            android:layout_height="47dp"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/uni_small_img"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="5dp"/>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="175dp"
+                          android:layout_height="55dp"
+                          android:orientation="vertical">
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Lv.1"
+                            android:textSize="14dp"
+                            android:includeFontPadding="false"
+                            android:textColor="#FFFFFF"
+                            android:fontFamily="@font/onemobile_pop"
+                    >
+                    </TextView>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginBottom="1dp"
+                            android:id="@+id/tutorial3_nicknameText2"
+                            android:fontFamily="@font/onemobile_pop"
+                            android:textColor="#FFFFFF"
+                            android:textSize="17dp"/>
+                </LinearLayout>
+
+
+                <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <ProgressBar
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:layout_width="165dp"
+                            android:layout_height="27dp"
+                            android:layout_marginTop="7dp"
+                            android:max="1000"
+                            android:progress="720"
+                            android:progressDrawable="@drawable/progressbar_progressbar2"/>
+
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="horizontal"
+                                  android:layout_gravity="left|center_vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginLeft="10dp">
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="15dp"
+                                android:adjustViewBounds="true"
+                                app:srcCompat="@drawable/home_energy"
+                                android:layout_gravity="left|center_vertical"/>
+
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_gravity="center">
+                            <TextView
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left|center_vertical"
+                                    android:textColor="#2F1F58"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/onemobile_pop"
+                                    android:text="720">
+                            </TextView>
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left|center_vertical"
+                                    android:text="/1000"
+                                    android:textColor="#2F1F58"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/onemobile_pop">
+                            </TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="27dp">
+                    <ImageView
+                            android:layout_width="75dp"
+                            android:layout_height="27dp"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/coin_background"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"/>
+
+                </FrameLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tutorial3_2_set"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <ImageView android:layout_width="334dp"
+                   android:layout_height="124dp"
+                   android:id="@+id/tutorial3_2_button"
+                   android:src="@drawable/tutorial3_2"
+                   app:layout_constraintLeft_toLeftOf="parent"
+                   app:layout_constraintRight_toRightOf="parent"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   android:layout_marginBottom="143dp"/>
+
+        <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                            android:layout_width="46dp"
+                            android:layout_height="47dp"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/uni_small_img"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="5dp"/>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="175dp"
+                          android:layout_height="55dp"
+                          android:orientation="vertical">
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Lv.1"
+                            android:textSize="14dp"
+                            android:includeFontPadding="false"
+                            android:textColor="#FFFFFF"
+                            android:fontFamily="@font/onemobile_pop"
+                    >
+                    </TextView>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginBottom="1dp"
+                            android:id="@+id/tutorial3_nicknameText3"
+                            android:fontFamily="@font/onemobile_pop"
+                            android:textColor="#FFFFFF"
+                            android:textSize="17dp"/>
+                </LinearLayout>
+
+
+                <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <ProgressBar
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:layout_width="165dp"
+                            android:layout_height="27dp"
+                            android:layout_marginTop="7dp"
+                            android:max="1000"
+                            android:progress="720"
+                            android:progressDrawable="@drawable/progressbar_progressbar2"/>
+
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="horizontal"
+                                  android:layout_gravity="left|center_vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginLeft="10dp">
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="15dp"
+                                android:adjustViewBounds="true"
+                                app:srcCompat="@drawable/home_energy"
+                                android:layout_gravity="left|center_vertical"/>
+
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_gravity="center">
+                            <TextView
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left|center_vertical"
+                                    android:textColor="#2F1F58"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/onemobile_pop"
+                                    android:text="720">
+                            </TextView>
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left|center_vertical"
+                                    android:text="/1000"
+                                    android:textColor="#2F1F58"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/onemobile_pop">
+                            </TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="27dp">
+                    <ImageView
+                            android:layout_width="75dp"
+                            android:layout_height="27dp"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/coin_background"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"/>
+
+                </FrameLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tutorial3_3_set"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView android:layout_width="334dp"
+                   android:layout_height="124dp"
+                   android:id="@+id/tutorial3_3_button"
+                   android:src="@drawable/tutorial3_3"
+                   app:layout_constraintLeft_toLeftOf="parent"
+                   app:layout_constraintRight_toRightOf="parent"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   android:layout_marginBottom="143dp"/>
+
+
+        <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_gravity="bottom"
+                    app:labelVisibilityMode="unlabeled"
+                    app:itemIconTint="@drawable/menu_selector_color"
+                    app:backgroundTint="@color/transparent"
+                    app:menu="@menu/bottom_navigation_view_tutorial"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+        </FrameLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tutorial3_4_set"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView android:layout_width="334dp"
+                   android:layout_height="124dp"
+                   android:id="@+id/tutorial3_4_button"
+                   android:src="@drawable/tutorial3_4"
+                   app:layout_constraintLeft_toLeftOf="parent"
+                   app:layout_constraintRight_toRightOf="parent"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   android:layout_marginBottom="143dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".HomeFragment"
+             android:background="@drawable/home_bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+        <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                            android:id="@+id/levelImg"
+                            android:layout_width="46dp"
+                            android:layout_height="47dp"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/uni_small_img"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="5dp" android:visibility="invisible"/>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="175dp"
+                          android:layout_height="55dp"
+                          android:orientation="vertical">
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/levelText"
+                            android:layout_gravity="center"
+                            android:text="Lv."
+                            android:textSize="14dp"
+                            android:includeFontPadding="false"
+                            android:textColor="#FFFFFF"
+                            android:fontFamily="@font/onemobile_pop"
+                    >
+                    </TextView>
+
+                    <TextView
+                            android:id="@+id/nicknameText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginBottom="1dp"
+                            android:fontFamily="@font/onemobile_pop"
+                            android:textColor="#FFFFFF"
+                            android:textSize="17dp"/>
+                </LinearLayout>
+
+
+                <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <ProgressBar
+                            android:id="@+id/levelProgressBar"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:layout_width="165dp"
+                            android:layout_height="27dp"
+                            android:layout_marginTop="7dp"
+                            android:max="1000"
+                            android:progressDrawable="@drawable/progressbar_progressbar2"/>
+
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="horizontal"
+                                  android:layout_gravity="left|center_vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginLeft="10dp">
+
+                        <ImageView
+                                android:id="@+id/heartImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="15dp"
+                                android:adjustViewBounds="true"
+                                app:srcCompat="@drawable/home_energy"
+                                android:layout_gravity="left|center_vertical"/>
+
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_gravity="center">
+                            <TextView
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/levelBarCount"
+                                    android:layout_gravity="left|center_vertical"
+                                    android:textColor="#2F1F58"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/onemobile_pop"
+                                    android:text="     ">
+                            </TextView>
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/levelBarCount2"
+                                    android:layout_gravity="left|center_vertical"
+                                    android:text="/1000"
+                                    android:textColor="#2F1F58"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/onemobile_pop">
+                            </TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="27dp">
+                    <ImageView
+                            android:id="@+id/coinState"
+                            android:layout_width="75dp"
+                            android:layout_height="27dp"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/coin_background"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/coinText"
+                            android:layout_gravity="right|center"
+                            android:textColor="#2F1F58"
+                            android:textSize="16dp"
+                            android:includeFontPadding="false"
+                            android:layout_marginRight="20dp"
+                            android:fontFamily="@font/onemobile_pop"
+                            android:layout_marginTop="0.5dp">
+                    </TextView>
+
+                </FrameLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/mainStepBox"
+                android:layout_width="355dp"
+                android:layout_height="95dp"
+                android:layout_marginBottom="130dp"
+                android:background="@drawable/step_background"
+                android:adjustViewBounds="true"
+                android:orientation="vertical"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" >
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical">
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/todayText"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1dp"
+                            android:text="Today"
+                            android:textSize="17dp"
+                            android:includeFontPadding="false"
+                            android:textColor="#4D141414"
+                            android:fontFamily="@font/onemobile_pop">
+                    </TextView>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/stepText"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="14dp"
+                            android:textColor="#303030"
+                            android:fontFamily="@font/onemobile_pop">
+                    </TextView>
+                </LinearLayout>
+                <ProgressBar
+                        android:id="@+id/todayProgressBar"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="290dp"
+                        android:layout_height="15dp"
+                        android:progressDrawable="@drawable/progressbar_progressbar1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <ImageView
+                android:id="@+id/univity"
+                android:layout_width="1000dp"
+                android:layout_height="1050dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:src="@drawable/uni_level1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.696" android:visibility="invisible"/>
+        <ImageView
+                android:id="@+id/univity2"
+                android:layout_width="1000dp"
+                android:layout_height="900dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:src="@drawable/uni_level3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:visibility="invisible"
+                app:layout_constraintVertical_bias="0.696"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

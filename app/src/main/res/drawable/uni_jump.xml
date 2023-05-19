@@ -1,0 +1,28 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/temp_uni_jump1"
+          android:duration="100"/>
+
+    <item android:drawable="@drawable/temp_uni_jump2"
+          android:duration="100"/>
+
+    <item android:drawable="@drawable/temp_uni_jump3"
+          android:duration="100"/>
+
+    <item android:drawable="@drawable/temp_uni_jump4"
+          android:duration="100"/>
+
+    <item android:drawable="@drawable/temp_uni_jump5"
+          android:duration="100"/>
+
+    <item android:drawable="@drawable/temp_uni_jump6"
+          android:duration="100"/>
+
+    <item android:drawable="@drawable/temp_uni_jump7"
+          android:duration="100"/>
+
+    <item android:drawable="@drawable/temp_uni_jump8"
+          android:duration="100"/>
+
+
+</animation-list>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             android:layout_width="350dp"
+             android:layout_height="600dp"
+             android:layout_gravity="center_horizontal"
+             android:layout_marginTop="213dp"
+             android:background="@android:color/transparent">
+
+    <!-- 타이틀바 -->
+    <LinearLayout android:layout_width="334dp"
+                  android:paddingLeft="20dp"
+                  android:paddingRight="20dp"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_marginTop="26dp"
+                  android:background="@drawable/round">
+
+        <TextView
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_marginTop="51dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="유니비티는"
+                android:fontFamily="@font/noto_sans"
+                android:textColor="@color/black"/>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_horizontal"
+                      android:orientation="horizontal">
+            <TextView
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="사용자 걷기 운동"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/notocjk_bold"
+                    android:textColor="@color/black"/>
+            <TextView
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="을 기반으로"
+                android:fontFamily="@font/noto_sans"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <TextView
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="진행되는 게임입니다.\n하루 목표 거리를 설정해주세요."
+                android:fontFamily="@font/noto_sans"
+                android:textColor="@color/black"/>
+
+        <NumberPicker
+                android:id="@+id/picker"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="51dp"
+                android:layout_width="match_parent"
+                android:layout_height="99dp"
+                android:theme="@style/NumberPickerStyle"
+        />
+
+        <ImageView
+                android:id="@+id/settingYesBtn"
+                android:layout_width="256dp"
+                android:layout_height="51dp"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="35dp"
+                android:src="@drawable/goalsetting_button"
+        />
+
+    </LinearLayout>
+
+
+    <ImageView android:layout_width="200dp"
+               android:layout_height="52dp"
+               android:layout_gravity="center_horizontal"
+               android:src="@drawable/univity_logo"/>
+
+</FrameLayout>

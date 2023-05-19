@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             android:layout_width="350dp"
+             android:layout_height="600dp"
+             android:layout_marginTop="265dp"
+             android:layout_gravity="center_horizontal"
+             android:background="@android:color/transparent">
+
+    <!-- 타이틀바 -->
+    <LinearLayout android:layout_width="334dp"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_marginTop="26dp"
+                  android:background="@drawable/round"
+                  android:layout_gravity="center_horizontal">
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_gravity="center"
+                      android:layout_marginTop="39dp"
+        >
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:gravity="center">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/onemobile_pop"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="17.14sp"
+                        android:text=""
+                        android:id="@+id/tvShopItem"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/black"
+                        android:text=""
+                        android:textSize="17.14sp"
+                        android:id="@+id/tvShopItem2"/>
+
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/txtText2"
+                    android:textSize="17.14sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="구매하시겠습니까?"
+                    android:fontFamily="@font/noto_sans"
+                    android:textColor="@color/black"/>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginBottom="29dp">
+
+                <ImageView
+                        android:id="@+id/failOkBtn"
+                        android:layout_width="134dp"
+                        android:layout_height="51dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/store_yes_button"
+                        android:onClick="mOnClick"/>
+
+                <ImageView
+                        android:id="@+id/storeNoButton"
+                        android:layout_width="134dp"
+                        android:layout_height="51dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/store_no_button"
+                        android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView android:layout_width="200dp"
+               android:layout_height="52dp"
+               android:layout_gravity="center_horizontal"
+               android:src="@drawable/univity_logo"/>
+
+</FrameLayout>
