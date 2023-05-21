@@ -1,8 +1,7 @@
 # UNIvity_Coddi
-## 2021.09 - 2022.06
+2021.09 - 2022.06
 디지털미디어학과 졸업 프로젝트: JAVA 기반 '산책 권장 캐릭터 양육' AR 앱 개발 및 전시회
-<br>
-<br> Digital Media Graduation project JAVA 기반 '활동량 증진' AR 앱 개발 및 졸업전시회 <br> 💻 as a Product Manager & Developer (Android)
+<br> 💻 as a Product Manager & Developer (Android)
 <br>
 
 <br>
